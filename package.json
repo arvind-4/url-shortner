@@ -1,0 +1,13 @@
+{
+  "name": "url-shortner",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "vercel": "^54.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
