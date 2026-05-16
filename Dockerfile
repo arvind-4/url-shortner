@@ -1,5 +1,5 @@
 # Stage 1: Builder
-FROM python:3.10-slim as builder
+FROM python:3.12-slim as builder
 
 # Install build dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -22,7 +22,7 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 
 # Stage 2: Final Image
-FROM python:3.10-slim
+FROM python:3.12-slim
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
