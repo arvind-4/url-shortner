@@ -2,7 +2,11 @@
 
 echo "Installing dependencies..."
 
-python3 -m pip install -r requirements.txt
+# Create a virtual environment to avoid PEP 668 externally-managed-environment error
+python3 -m venv /tmp/venv
+source /tmp/venv/bin/activate
+
+pip install -r requirements.txt
 
 echo "Migrating database..."
 
