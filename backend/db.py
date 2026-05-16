@@ -1,6 +1,5 @@
-import os
 import pathlib
-from decouple import config
+from backend.env import config
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent.parent
 
