@@ -24,10 +24,11 @@ A simple URL shortener built using Django and PostgreSQL.
 ## Try the api!
 
 ```bash
-curl --location 'https://awesomeurlshortner.vercel.app/shorten/' \
+curl -X POST \
+--location 'https://awesomeurlshortner.vercel.app/api/shorten/' \
 --header 'Content-Type: application/json' \
 --data '{
-    "url": "facebook.com"
+    "url": "google.com"
 }'
 ```
 
